@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="siC-jg-GLB">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ejercicio03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vwl-gi-YIn">
+            <objects>
+                <viewController id="siC-jg-GLB" customClass="ViewController" customModule="Ejercicio03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Loy-cJ-3dm">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visita nuestras redes sociales" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-5l-5fB">
+                                <rect key="frame" x="69.333333333333343" y="89" width="291.33333333333326" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIz-r3-57h">
+                                <rect key="frame" x="165" y="302" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="36z-sz-4gK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="facebook"/>
+                                <connections>
+                                    <action selector="FacebookBtn:" destination="siC-jg-GLB" eventType="touchUpInside" id="uvZ-IE-mUA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-NV-g4E">
+                                <rect key="frame" x="165" y="387" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0o2-fL-pzc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Youtube"/>
+                                <connections>
+                                    <action selector="YoutubeBtn:" destination="siC-jg-GLB" eventType="touchUpInside" id="0FP-5C-UTq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJr-Cg-ci4">
+                                <rect key="frame" x="165" y="472" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HpZ-yW-ded"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Instagram"/>
+                                <connections>
+                                    <action selector="InstagramBtn:" destination="siC-jg-GLB" eventType="touchUpInside" id="xNi-Cf-rls"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtK-Bb-KGV">
+                                <rect key="frame" x="165" y="217" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iSC-aD-gee"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Twitter"/>
+                                <connections>
+                                    <action selector="TwitterBtn:" destination="siC-jg-GLB" eventType="touchUpInside" id="Mn5-0T-kKD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WlF-VE-8mA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oJr-Cg-ci4" firstAttribute="top" secondItem="ve0-NV-g4E" secondAttribute="bottom" constant="50" id="1Jk-dx-bZo"/>
+                            <constraint firstItem="ve0-NV-g4E" firstAttribute="top" secondItem="aIz-r3-57h" secondAttribute="bottom" constant="50" id="Bky-Yd-6WL"/>
+                            <constraint firstItem="b7J-5l-5fB" firstAttribute="top" secondItem="WlF-VE-8mA" secondAttribute="top" constant="30" id="DZb-3p-jVn"/>
+                            <constraint firstItem="oJr-Cg-ci4" firstAttribute="centerX" secondItem="Loy-cJ-3dm" secondAttribute="centerX" id="Dxd-oC-qcZ"/>
+                            <constraint firstItem="b7J-5l-5fB" firstAttribute="centerX" secondItem="Loy-cJ-3dm" secondAttribute="centerX" id="Pqs-eO-YfI"/>
+                            <constraint firstItem="EtK-Bb-KGV" firstAttribute="centerX" secondItem="Loy-cJ-3dm" secondAttribute="centerX" id="Udr-V9-OMb"/>
+                            <constraint firstItem="EtK-Bb-KGV" firstAttribute="top" secondItem="b7J-5l-5fB" secondAttribute="bottom" constant="100" id="fgn-wN-FyC"/>
+                            <constraint firstItem="ve0-NV-g4E" firstAttribute="centerX" secondItem="Loy-cJ-3dm" secondAttribute="centerX" id="xzd-Kg-LdL"/>
+                            <constraint firstItem="aIz-r3-57h" firstAttribute="centerX" secondItem="Loy-cJ-3dm" secondAttribute="centerX" id="y2l-96-PBB"/>
+                            <constraint firstItem="aIz-r3-57h" firstAttribute="top" secondItem="EtK-Bb-KGV" secondAttribute="bottom" constant="50" id="zRk-1d-HcE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YSc-D2-fZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5q-cm-zx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-27"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
